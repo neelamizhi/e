@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SINCERE Catering</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#111;
+    color:#fff;
+}
+
+nav h1{
+    font-size:24px;
+    color:#f4b400;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#f4b400;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1555244162-803834f70033') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:10px;
+}
+
+.hero h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#f4b400;
+    color:#111;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#fff;
+}
+
+/* Sections */
+section{
+    padding:70px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+    color:#111;
+}
+
+/* About */
+.about p{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Services */
+.services-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.service{
+    flex:1 1 30%;
+    background:#f9f9f9;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.service:hover{
+    transform:translateY(-10px);
+}
+
+/* Menu */
+.menu-items{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.menu-item{
+    flex:1 1 30%;
+    background:#f4b400;
+    padding:25px;
+    border-radius:10px;
+    color:#111;
+    text-align:center;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+    background:#111;
+    color:#fff;
+    padding:50px 10%;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    background:#000;
+    color:#fff;
+    font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .services-container,
+    .menu-items{
+        flex-direction:column;
+    }
+
+    .hero h2{
+        font-size:32px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <h1>SINCERE</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Welcome to SINCERE Catering</h2>
+        <p>Delicious food. Elegant presentation. Unforgettable experiences.</p>
+        <a href="#" class="btn">Book Now</a>
+    </div>
+</section>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        At SINCERE Catering, we provide high-quality catering services for weddings,
+        corporate events, birthdays, and private gatherings. Our mission is to deliver
+        exceptional taste and service that leaves lasting memories.
+    </p>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+        <div class="service">
+            <h3>Wedding Catering</h3>
+            <p>Elegant dining experiences tailored for your special day.</p>
+        </div>
+        <div class="service">
+            <h3>Corporate Events</h3>
+            <p>Professional catering solutions for meetings and conferences.</p>
+        </div>
+        <div class="service">
+            <h3>Private Parties</h3>
+            <p>Delicious meals for birthdays, anniversaries, and celebrations.</p>
+        </div>
+    </div>
+</section>
+
+<section class="menu">
+    <h2>Popular Menu</h2>
+    <div class="menu-items">
+        <div class="menu-item">
+            <h3>Grilled Chicken</h3>
+            <p>Served with seasonal vegetables</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pasta Alfredo</h3>
+            <p>Creamy Italian classic</p>
+        </div>
+        <div class="menu-item">
+            <h3>Chocolate Dessert</h3>
+            <p>Rich and delightful finish</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@sincerecatering.com</p>
+    <p>Phone: +123 456 7890</p>
+</section>
+
+<footer>
+    © 2026 SINCERE Catering. All Rights Reserved.
+</footer>
+
+</body>
+</html>
